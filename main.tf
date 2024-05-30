@@ -1,12 +1,6 @@
-resource "google_cloud_run_service" "content-gen" {
-  name     = "content-gen"
-  location = "us-east1"
+resource "google_storage_bucket" "import-env0" {
+  name          = "bucket-not-made-using-terraform-env0"
+  location      = "US"
+  force_destroy = true
 
-  template {
-    spec {
-      containers {
-        image = "gcr.io/content-gen-418510/content-gen:latest"
-      }
-    }
-  }
 }
