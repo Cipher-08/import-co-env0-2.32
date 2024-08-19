@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "import-env0" {
+resource "google_storage_bucket" "import-env0-t" {
   name          = "bucket-not-made-using-terraform-env0"
   location      = "US"
   force_destroy = true
